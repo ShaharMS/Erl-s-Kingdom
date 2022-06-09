@@ -33,9 +33,9 @@ class Menu extends FlxState
 		{
 			m.push(p);
 		}
-		for (i in 1...FINAL_ARRAY.length) {
-			var point = FINAL_ARRAY[i];
-			var previousPoint = FINAL_ARRAY[i - 1];
+		for (i in 1...POINTS.length) {
+			var point = POINTS[i];
+			var previousPoint = POINTS[i - 1];
 			//calculate average speeds between each position
 			var p = (point.position - previousPoint.position) / (point.time - previousPoint.time);
 			pushing(p);
@@ -58,13 +58,13 @@ var POINTS:Array<Position> = [
 	{position: 0.3, time: 1 / 30},
 	{position: 0.6, time: 2 / 30},
 	{position: 0.9, time: 3 / 30},
-	{position: 1.2, time: 4 / 30},
+	{position: 1.2, time: 4 / 30}, //done.
 	{position: 1.6, time: 5 / 30},
 	{position: 2.1, time: 6 / 30},
 	{position: 3, time: 7 / 30},
 	{position: 3.4, time: 8 / 30},
 	{position: 3.8, time: 9 / 30},
-	{position: 4.2, time: 10 / 30},
+	{position: 4.2, time: 10 / 30}, // done.
 	{position: 4.4, time: 11 / 30}, // writtenDistance - 12.4
 	{position: 4.6, time: 12 / 30},
 	{position: 5, time: 13 / 30},
